@@ -3,6 +3,8 @@
 ## Tarefas
 😎💯✔💲
 * [ ] Header(cabeçalho)
+    * [✔] Header HTML
+    * [] Header CSS
 * [ ] Apresentação
 * [ ] Curiosidades
 * [ ] Sugestão de novas curiosidades
