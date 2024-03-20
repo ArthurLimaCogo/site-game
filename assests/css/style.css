@@ -32,7 +32,10 @@ h2{
 
 img {
     margin: auto;
+    max-width: auto;
+    max-height: auto;
     display: block;
+    width: 500px
 }
 
 p{
@@ -62,4 +65,83 @@ p{
 
 .nav-bar li{
     float: left;
+}
+
+
+/* linha teste */
+
+#secao-apresentacao{
+    display: flex;
+    padding: 4rem;
+    align-items: center;
+}
+
+#secao-apresentacao img{
+    border-radius: 50%;
+}
+
+#texto-apresentacao{
+    color: var(--color-preto);
+}
+
+#texto-apresentacao h2{
+    font-size: 2.5rem;
+    font-family: var(--font-titulo);
+}
+
+#texto-apresentacao p{
+    font-size: 1.5rem;
+    font-family: var(--font-body);
+}
+
+#secao-projetos {
+    background-color: #272935;
+    height: 100vh;
+
+}
+
+#secao-projetos ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.card{
+    max-width: 300px; 
+    height: 420px;
+    position: relative;
+    transition: opacity .5s;
+}
+
+.image-wrapper{
+    max-width: 100%; 
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-wrapper img{
+    max-width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text{
+    position: absolute;
+    top: 30%;
+    opacity: 0;
+    transition: opacity .5s, top .5s;
+    color: var(--color-destaque);
+}   
+.card-text p{
+    font-size: larger;
+}
+
+.card:hover .card-text{
+    opacity: 1;
+    top: 15%;
+    color: var(--color-destaque);
+}
+
+.card:hover .image-wrapper{
+    opacity: .3;
 }
