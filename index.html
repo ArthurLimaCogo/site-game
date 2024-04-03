@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curiosidades sobre games</title>
     <link rel="stylesheet" href="./assests/css/style.css">
+    <script src="./assests/js/script_index.js" defer></script>
 </head>
 <body>
     <h1>Meu Blog</h1>
@@ -12,8 +13,15 @@
         <nav class="nav-bar">
             <ul>
                 <li><a href="">Menu</a></li>
-                <li><a href="">Categorias</a></li>
-                <li><a href="./sobre-mim.html">Sobre mim</a></li>
+                <li class="dropdown"><a href="#" class="dropbtn">Outras noticias
+                </a>
+                <div class="conteudo_dropdown">
+                    <a href="./top100.html">Top 100 jogos mais jogados do mundo</a>
+                    <a href="#">Teste</a>
+                    <a href="#">Teste</a>
+                    </div>
+                </li>
+                <li><a href="./sobre-nos.html">Sobre nos</a></li>
                 <li><a href="./contato.html">Contato</a></li>
             </ul>
         </nav>
@@ -22,21 +30,21 @@
     <main>
         <h3>
         Muito jogos que nos jogamos sempre tem algum segredo ou nos arquivos, 
-        ou mesmo no proprio desenvolvimento. Nesse blog vou apresentar algumas
+        ou mesmo no próprio desenvolvimento. Nesse blog vou apresentar algumas
         curiosidades de alguns jogo, que você provavelmente já jogou ou vai jogar.
         </h3>
 
         <h2>Sumario</h2>
 
         <ol>
-            <li>Pokemon</li>
-            <li>Zelda</li>
-            <li>Dragon ball</li>
-            <li>Mario</li>
-            <li>Yu-gi-oh</li>
+            <li> <a href="#pokemon">Pokemon</a></li>
+            <li> <a href="#zelda">Zelda</a></li>
+            <li> <a href="#dbz">Dragon ball</a></li>
+            <li> <a href="#mario">Mario</a></li>
+            <li> <a href="#minecraft">Minecraft</a></li>
         </ol>
 
-        <h1>Pokemon</h1>
+        <h1 id="pokemon">Pokemon </h1>
         <h2>Foram criados mais de 300 Pokémon para os primeiros jogos</h2>
 
         <img src="/assests/image/pokemon1.png" alt="">
@@ -56,7 +64,7 @@
             <a href="https://projectn.com.br/pokemon-perdidos-cortados-modificados-primeiras-geracoes-parte-2/">Parte 2</a> 
         </p>
     
-        <h1> The Legend of Zelda</h1>
+        <h1 id="zelda"> The Legend of Zelda</h1>
         <h2>Para criar Zelda, os desenvolvedores se inspiraram em Indiana Jones</h2>
 
         <img class="zelda" src="./assests/image/zelda.jpg" alt="">
@@ -70,6 +78,67 @@
             tipo de informações. Com um mundo de espadas e magia como tema, decidi criar um jogo de aventura 
             baseado numa caça ao tesouro. E assim surgiu The Legend of Zelda”.
         </p>
+
+        <h1 id="dbz">Dragon Ball Z: Budokai Tenkaichi 3</h1>
+        <h2>Personagem fraco com uma utilidade muito útil</h2>
+
+        <img src="./assests/image/dbz_foto.PNG" alt="" >
+
+        <p>
+            Dragon Ball Z: Budokai Tenkaichi 3 traz uma lista extensa de personagens, e um desses nomes é o de 
+            Arele Norimaki. Protagonista da série Dr. Slump, que também foi criada por Akira Toriyama, ela 
+            aparece como uma personagem menor em Dragon Ball e, consequentemente, no game.
+            Arale pode ser caracterizada como uma personagem gag, ou seja, que raramente é utilizada e não
+            vai muito além do suporte para o protagonista ou outros nomes de uma obra. Entretanto, 
+            vez ou outra, esses personagens podem surpreender — como neste caso!
+            Dragon Ball Z: Budokai Tenkaichi 3 tem alguns inimigos que não são atingidos normalmente 
+            por muitos personagens, como Broly. Porém, Arele aparentemente não segue essa regra e 
+            pode atingir qualquer adversário que apareça em seu caminho.
+        </p>
+
+        <h1 id="mario">Super Mario 64</h1>
+        <h2>Luigi foi removido de Super Mario 64 por causa de problemas de memória</h2>
+
+        <p>
+            Em uma entrevista, Miyamoto destacou que o personagem permaneceu dentro do game até quase o 
+            lançamento do game. Porém, Luigi precisou ser removido de Super Mario 64 por causa da 
+            quantidade de memória do console.
+            O Vídeo VHS em questão dura apenas 2 segundos, extraído da apresentação 
+            Space World Show de 1995, quando a Nintendo apresentou ao público o Nintendo 
+            64 pela primeira vez. Nas imagens, é possível ver claramente Luigi em uma das telas, 
+            enquanto Mario aparece na outra.
+        </p>
+        <div class="twitter">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We finally have a glimpse of what the early multiplayer mode for Super Mario 64 looked like! This is also the first time we have seen Luigi&#39;s SM64 model outside of the Nintendo Leaks! Take a look! 
+                <a href="https://t.co/Ev3R7NDBtp">pic.twitter.com/Ev3R7NDBtp</a></p>&mdash; Marionova (@Marionova64) <a href="https://twitter.com/Marionova64/status/1735684255651336259?ref_src=twsrc%5Etfw">December 15, 2023</a>
+            </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <h1 id="minecraft">Minecraft</h1>
+        <h2>Os creepers nasceram como um erro</h2>
+
+        <p>
+            O processo de criação dos creepers, um dos monstros nativos de Minecraft, começou com a 
+            tentativa de fazer um porco, mas o desenvolvedor do game trocou altura por comprimento ao 
+            inserir o código. “Eu não tenho um modelo de programação, então apenas escrevo os códigos e 
+            acidentalmente os fiz altos ao invés de longos, e ficou aquela coisa alta com quatro pequenas 
+            patinhas”, disse Notch no documentário “Minecraft: A História da Mojang”, de 2012. Os creepers 
+            chegam silenciosamente para destruir as construções, mas têm medo dos ocelotes (uma espécie de gato).
+        </p>
+
+        <img src="./assests/image/minecraft.jpg" alt="">
     </main>
+
+    <footer>
+        <p>&copy; 2023 - Todos os direitos reservados</p>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
